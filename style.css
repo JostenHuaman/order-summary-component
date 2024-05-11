@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Red Hat Display";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Pale-blue);
+}
+
+.container {
+    border: 1px solid red;
+    width: 340px;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 10px;
+
+    & img {
+        width: 340px;
+        height: 150px;
+        display: block;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    & h2 {
+        font-size: 1.5em;
+        text-align: center;
+        color: var(--Dark-blue);
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+
+    & .description {
+        font-size: 0.9em;
+        text-align: center;
+        margin: 0px 45px;
+        color: var(--Desaturated-blue);
+        font-weight: 500;
+    }
+
+    & .music {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--Very-pale-blue);
+        margin: 20px 30px;
+        padding: 10px;
+        border-radius: 10px;
+
+        & .plan {
+            font-size: 0.9em;
+            font-weight: 800;
+            color: var(--Dark-blue);
+            line-height: 24px;
+        }
+
+        & embed {
+            margin-right: -40px;
+        }
+
+        & .price {
+            font-size: 0.9em;
+            font-weight: 400;
+            color: var(--Desaturated-blue);
+
+        }
+
+        & a {
+            font-size: 0.8em;
+            font-weight: 700;
+            color: var(--Bright-blue);
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+                text-decoration: none;
+            }
+        }
+    }
+
+    & button {
+        width: 280px;
+        margin: 0px 30px;
+        padding: 15px;
+        background-color: var(--Bright-blue);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    & .cancel {
+        font-size: 0.8em;
+        text-align: center;
+        color: var(--Dark-blue);
+        font-weight: 800;
+        margin: 20px 0px;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.attribution {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 20px 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
